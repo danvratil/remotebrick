@@ -18,6 +18,7 @@ ApplicationWindow {
     visible: true
     title: qsTr("Remote Brick")
 
+
     Material.theme: Material.System
 
     StackView {

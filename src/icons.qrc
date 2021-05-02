@@ -6,5 +6,6 @@
         <file alias="arrow-up">icons/breeze/go-up.svg</file>
         <file alias="process-stop">icons/breeze/process-stop.svg</file>
         <file alias="view-refresh">icons/breeze/view-refresh.svg</file>
+        <file alias="app-icon">icons/remotebrick.png</file>
     </qresource>
 </RCC>

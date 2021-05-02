@@ -6,6 +6,7 @@
 
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QIcon>
 
 #include "bluetoothconnection.h"
 
@@ -16,6 +17,8 @@ int main(int argc, char *argv[])
 #endif
 
     QGuiApplication app(argc, argv);
+    app.setApplicationDisplayName(app.tr("Remote Brick"));
+    app.setWindowIcon(QIcon(QStringLiteral(":/icons/app-icon")));
 
     QQmlApplicationEngine engine;
     qmlRegisterType<BluetoothConnection>("cz.dvratil.remotebrick", 1, 0, "BluetoothConnection");
