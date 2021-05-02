@@ -8,4 +8,4 @@ used to remotely control an Arduino-powered LEGO creations through Bluetooth.
 The Arduino board must run RemoteBrick Arduino software (otherwise they won't
 understand each other :)
 
-The software for the Arduino board is in the [remotebrick-arduino][https://github.com/danvratil/remotebrick-arduino] repository.
+The software for the Arduino board is in the [remotebrick-arduino](https://github.com/danvratil/remotebrick-arduino) repository.
