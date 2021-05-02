@@ -1,5 +1,6 @@
 set(remotebrick_SRCS
     main.cpp
+    bluetoothconnection.cpp bluetoothconnection.h
     qml.qrc
 )
 

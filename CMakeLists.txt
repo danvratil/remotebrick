@@ -28,4 +28,4 @@ find_package(QT NAMES Qt6 Qt5 COMPONENTS Core Quick Bluetooth REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core Quick Bluetooth REQUIRED)
 
 add_subdirectory(src)
-
+add_subdirectory(tests)

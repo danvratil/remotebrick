@@ -4,7 +4,13 @@
         <file>qml/main.qml</file>
         <file>qml/DeviceList.qml</file>
         <file>qml/DeviceListForm.ui.qml</file>
+        <file>qml/DevicePage.qml</file>
+        <file>qml/DevicePageForm.ui.qml</file>
+        <file>qml/ControlsView.qml</file>
         <file>qml/ConnectingPage.qml</file>
         <file>qml/ConnectingPageForm.ui.qml</file>
+        <file>qml/components/PageWithHeader.qml</file>
+        <file>qml/Commands.js</file>
+        <file>qml/components/ActionBinding.qml</file>
     </qresource>
 </RCC>

@@ -19,34 +19,28 @@ DeviceListForm {
             }
         }
 
-        onDeviceDiscovered: {
-            console.log("Device discovered: " + device);
-        }
-
-        onErrorChanged: {
-            console.log("Device discovery error: " + error);
-        }
+        onDeviceDiscovered: console.log("Device discovered: " + device)
+        onErrorChanged: console.log("Device discovery error: " + error)
     }
 
-    scanToolButton.onClicked: {
-        deviceDiscoveryModel.running = !deviceDiscoveryModel.running
-    }
+    toolButton.onClicked: deviceDiscoveryModel.running = !deviceDiscoveryModel.running
 
     deviceDelegate: ItemDelegate {
         width: parent.width
         text: model.name
         icon.name: "network-bluetooth"
 
-        onClicked: deviceSelected(model.remoteAddress);
+        onClicked: deviceSelected(model.name, model.remoteAddress);
     }
 
-    function deviceSelected(address) {
-        stackView.push(connectingPage, {"device": address})
+    function deviceSelected(name, address) {
+        deviceDiscoveryModel.running = false
+        stackView.push(devicePage, {"deviceName": name, "deviceAddress": address})
     }
 
     Component {
-        id: connectingPage
+        id: devicePage
 
-        ConnectingPage {}
+        DevicePage {}
     }
 }
