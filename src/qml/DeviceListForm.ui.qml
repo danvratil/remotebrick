@@ -1,3 +1,9 @@
+/*
+ * SPDX-FileCopyrightText: 2021 Daniel Vrátil <me@dvratil.cz>
+ *
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
 import QtQuick 2.4
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.12

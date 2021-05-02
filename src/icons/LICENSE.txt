@@ -1,0 +1,1 @@
+All files in the 'breeze' subdirectory are lincesed under LGPLv3.0.
