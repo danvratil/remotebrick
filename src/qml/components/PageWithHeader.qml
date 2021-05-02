@@ -13,7 +13,7 @@ Page {
 
             ToolButton {
                 id: backButton
-                icon.name: "arrow-left"
+                icon.source: "qrc:/icons/arrow-left"
             }
             Label {
                 id: titleLabel

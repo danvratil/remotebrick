@@ -12,5 +12,6 @@
         <file>qml/components/PageWithHeader.qml</file>
         <file>qml/Commands.js</file>
         <file>qml/components/ActionBinding.qml</file>
+        <file>qml/components/Toaster.qml</file>
     </qresource>
 </RCC>

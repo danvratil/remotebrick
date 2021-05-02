@@ -8,15 +8,19 @@ PageWithHeader {
     property bool loading: true
 
     property alias deviceDelegate: deviceListView.delegate
+    property alias toaster: toaster
 
     pageTitle: qsTr("Connect to device")
     backButton.visible: false
-    toolButton.icon.name: loading ? "process-stop" : "view-refresh"
-
+    toolButton.icon.source: loading ? "qrc:/icons/process-stop" : "qrc:/icons/view-refresh"
 
     ListView {
         id: deviceListView
         anchors.fill: parent
         model: deviceModel
+    }
+
+    Toaster {
+        id: toaster
     }
 }

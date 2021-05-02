@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file alias="arrow-down">icons/breeze/go-down.svg</file>
+        <file alias="arrow-right">icons/breeze/go-next.svg</file>
+        <file alias="arrow-left">icons/breeze/go-previous.svg</file>
+        <file alias="arrow-up">icons/breeze/go-up.svg</file>
+        <file alias="process-stop">icons/breeze/process-stop.svg</file>
+        <file alias="view-refresh">icons/breeze/view-refresh.svg</file>
+    </qresource>
+</RCC>

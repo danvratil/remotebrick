@@ -20,7 +20,17 @@ DeviceListForm {
         }
 
         onDeviceDiscovered: console.log("Device discovered: " + device)
-        onErrorChanged: console.log("Device discovery error: " + error)
+
+        onErrorChanged: {
+            console.log("Device discovery error: " + error)
+            if (error === BluetoothDiscoveryModel.PoweredOffError) {
+                toaster.show(qsTr("Bluetooth is turned off, please turn it on."));
+            } else if (error == BluetoothDiscoveryModel.InputOutputError) {
+                toaster.show(qsTr("I/O Error during discovery."));
+            } else {
+                toaster.show(qsTr("Failed to scan devices."));
+            }
+        }
     }
 
     toolButton.onClicked: deviceDiscoveryModel.running = !deviceDiscoveryModel.running

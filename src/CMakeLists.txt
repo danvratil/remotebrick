@@ -2,6 +2,7 @@ set(remotebrick_SRCS
     main.cpp
     bluetoothconnection.cpp bluetoothconnection.h
     qml.qrc
+    icons.qrc
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -21,3 +22,6 @@ target_link_libraries(remotebrick
     Qt${QT_VERSION_MAJOR}::Quick
     Qt${QT_VERSION_MAJOR}::Bluetooth
 )
+if (ANDROID)
+    target_link_libraries(remotebrick PRIVATE Qt${QT_VERSION_MAJOR}::Svg)
+endif()

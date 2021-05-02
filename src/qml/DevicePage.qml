@@ -13,10 +13,14 @@ DevicePageForm {
     BluetoothConnection {
         id: connection
 
-        onConnectedChanged: function() {
+        onConnectedChanged: {
             if (connected) {
                 stackView.pop(StackView.PushTransition)
             }
+        }
+
+        onConnectionError: {
+            toaster.show(qsTr("Connection error: " + message));
         }
     }
 

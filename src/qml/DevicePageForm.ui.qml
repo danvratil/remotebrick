@@ -6,6 +6,7 @@ import "./components"
 PageWithHeader {
 
     property alias controls: controls
+    property alias toaster: toaster
 
     ControlsView {
         id: controls
@@ -13,5 +14,9 @@ PageWithHeader {
             fill: parent
             margins: 50
         }
+    }
+
+    Toaster {
+        id: toaster
     }
 }

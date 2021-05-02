@@ -17,7 +17,7 @@ GridLayout {
         Layout.column: 1
         Layout.fillHeight: true
         Layout.fillWidth: true
-        icon.name: "arrow-up"
+        icon.source: "qrc:/icons/arrow-up"
     }
 
     Button {
@@ -26,7 +26,7 @@ GridLayout {
         Layout.column: 0
         Layout.fillHeight: true
         Layout.fillWidth: true
-        icon.name: "arrow-left"
+        icon.source: "qrc:/icons/arrow-left"
     }
 
     Button {
@@ -35,7 +35,7 @@ GridLayout {
         Layout.column: 2
         Layout.fillHeight: true
         Layout.fillWidth: true
-        icon.name: "arrow-right"
+        icon.source: "qrc:/icons/arrow-right"
     }
 
     Button {
@@ -44,7 +44,7 @@ GridLayout {
         Layout.column: 1
         Layout.fillHeight: true
         Layout.fillWidth: true
-        icon.name: "arrow-down"
+        icon.source: "qrc:/icons/arrow-down"
     }
 
 }
