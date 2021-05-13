@@ -13,5 +13,6 @@
         <file>qml/Commands.js</file>
         <file>qml/components/ActionBinding.qml</file>
         <file>qml/components/Toaster.qml</file>
+        <file>qml/SideControlsView.qml</file>
     </qresource>
 </RCC>

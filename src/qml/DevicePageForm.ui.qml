@@ -14,11 +14,10 @@ PageWithHeader {
     property alias controls: controls
     property alias toaster: toaster
 
-    ControlsView {
+    SideControlsView {
         id: controls
         anchors {
             fill: parent
-            margins: 50
         }
     }
 
